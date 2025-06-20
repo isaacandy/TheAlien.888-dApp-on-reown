@@ -1,0 +1,223 @@
+/* TheAlien888 dApp global styles */
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Lato', 'OCR A BT', 'Geometr415 Blk BT', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mint-now-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 10000;
+  padding: 24px 0 16px 0;
+}
+
+.mint-now-btn {
+  font-size: 1.5em;
+  padding: 16px 48px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 12px #0003;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mint-now-btn:hover, .mint-now-btn:focus {
+  background: #222;
+  color: #00e676;
+  outline: none;
+}
+
+#mint-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-modal-content {
+  background: #181818;
+  border-radius: 32px;
+  padding: 56px 48px;
+  max-width: 900px;
+  width: 96vw;
+  min-height: 480px;
+  box-shadow: 0 12px 48px #000a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.close-mint-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.mint-alien-img {
+  width: 180px;
+  max-width: 80vw;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0007;
+}
+
+.minted-count {
+  font-size: 1.1em;
+  margin-bottom: 18px;
+  color: #00e676;
+  font-weight: bold;
+}
+
+.minting-widget-modal {
+  width: 100%;
+  max-width: 480px;
+}
+
+.mint-modal-title {
+  font-family: 'Geometr415 Blk BT', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.mint-modal-wallet {
+  margin-bottom: 16px;
+  font-size: 1.1em;
+  color: #aaffcc;
+}
+
+.mint-modal-input {
+  width: 80px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+}
+
+.mint-modal-label {
+  margin-left: 12px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.mint-modal-btn {
+  margin: 12px 0;
+  padding: 12px 32px;
+  border-radius: 10px;
+  background: #00e676;
+  color: #222;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mint-modal-btn:hover, .mint-modal-btn:focus {
+  background: #222;
+  color: #00e676;
+  outline: none;
+}
+
+.mint-modal-status {
+  margin-top: 16px;
+  min-height: 28px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .mint-now-btn {
+    width: 90vw;
+    font-size: 1.1em;
+    padding: 14px 0;
+  }
+  .mint-now-bottom {
+    padding: 12px 0 8px 0;
+  }
+  .mint-modal-content {
+    max-width: 98vw !important;
+    width: 98vw !important;
+    padding: 16px 4px !important;
+    border-radius: 0 !important;
+  }
+  .minting-widget-modal {
+    max-width: 100vw !important;
+    width: 100vw !important;
+  }
+  .mint-alien-img {
+    width: 90vw;
+    max-width: 90vw;
+  }
+}
+
+.mint-modal-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+.mint-modal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.mint-alien-img-side {
+  width: 340px;
+  max-width: 44vw;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px #000a;
+}
+
+@media (max-width: 800px) {
+  .mint-modal-flex {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .mint-alien-img-side {
+    width: 96vw;
+    max-width: 96vw;
+  }
+  .mint-modal-info {
+    align-items: center;
+  }
+}
+
+#mint-modal {
+  z-index: 1000;
+}
+
+.web3modal-modal-lightbox, .web3modal-modal-darkbox, .web3modal-modal-card {
+  z-index: 10001 !important;
+  position: fixed !important;
+}

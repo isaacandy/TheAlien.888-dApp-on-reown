@@ -1,0 +1,12 @@
+iframe {
+    width: 100%;
+    margin-left: auto;
+    padding: 0,8%,0;
+    height: 650px;
+    position: absolute;
+}
+
+.output {
+    background: transparent;
+    background-color: transparent;
+}

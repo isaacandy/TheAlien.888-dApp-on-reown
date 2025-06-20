@@ -1,0 +1,56 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-link {
+  opacity: 0.5;
+  font-size: 27px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: white;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3.5%;
+}
+
+.button {
+  border: none;
+  font-size: medium;
+  box-align: center;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.mint-metamask-link {
+  color: #00e676;
+  font-weight: bold;
+}

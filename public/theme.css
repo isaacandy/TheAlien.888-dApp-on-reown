@@ -1,0 +1,9 @@
+:root {
+  --primary: rgba(31,32,73,0);
+  --primary-text: white;
+  --secondary: rgb(31,32,73);
+  --secondary-text: #ffffff;
+  --accent: white;
+  --accent-text: white;
+  --newbutton-color: black;
+}
